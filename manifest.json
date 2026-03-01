@@ -1,0 +1,59 @@
+{
+    "manifest_version": 3,
+    "name": "eBay Total Price",
+    "version": "1.0",
+    "description": "Shows total price (price + estimated tax + shipping) on eBay search results.",
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "*://ebay.com/*",
+        "*://ebay.co.uk/*",
+        "*://ebay.de/*",
+        "*://ebay.com.au/*",
+        "*://ebay.ca/*",
+        "*://ebay.it/*",
+        "*://ebay.es/*",
+        "*://ebay.fr/*",
+        "*://*.ebay.com/*",
+        "*://*.ebay.co.uk/*",
+        "*://*.ebay.de/*",
+        "*://*.ebay.com.au/*",
+        "*://*.ebay.ca/*",
+        "*://*.ebay.it/*",
+        "*://*.ebay.es/*",
+        "*://*.ebay.fr/*"
+    ],
+    "action": {
+        "default_title": "eBay Total Price Settings"
+    },
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://ebay.com/*",
+                "*://ebay.co.uk/*",
+                "*://ebay.de/*",
+                "*://ebay.com.au/*",
+                "*://ebay.ca/*",
+                "*://ebay.it/*",
+                "*://ebay.es/*",
+                "*://ebay.fr/*",
+                "*://*.ebay.com/sch/*",
+                "*://*.ebay.co.uk/sch/*",
+                "*://*.ebay.de/sch/*",
+                "*://*.ebay.com.au/sch/*",
+                "*://*.ebay.ca/sch/*",
+                "*://*.ebay.it/sch/*",
+                "*://*.ebay.es/sch/*",
+                "*://*.ebay.fr/sch/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ]
+}
