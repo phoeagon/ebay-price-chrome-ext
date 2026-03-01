@@ -24,6 +24,20 @@ h1 {
     margin-bottom: 20px;
 }
 
+.checkbox-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-section label {
+    margin-bottom: 0;
+}
+
+.checkbox-section input {
+    width: auto;
+}
+
 label {
     display: block;
     font-weight: bold;
